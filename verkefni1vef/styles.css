@@ -1,0 +1,39 @@
+body {
+    border: 2px solid blue;
+    margin: 1em auto;
+    padding: 1em;
+    width: 50em
+}
+h1{
+    text-align: center;
+}
+h2{
+    color: darkred;
+}
+.litur{
+    color: blue; 
+}
+.body{
+    color: red;
+}
+.blabla{
+    color: darkred;
+}
+.rautt{
+    color: red;
+}
+.bull{
+    color: blue;
+}
+.lennon{
+    color: blue;
+}
+.namsdrall{
+    color: blue;
+}
+.bls{
+    color: blue;
+}
+.idk{
+    color: green;
+}
