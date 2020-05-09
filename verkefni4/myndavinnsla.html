@@ -4,6 +4,7 @@
 <head>
     <title>Verkefni 4</title>
     <meta charset="utf-8">
+    <meta author="#">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" type="text/css" href="css/mystyle.css">
     <link rel="stylesheet" type="text/css" href="css/responsive.css">
@@ -14,15 +15,20 @@
         <nav>
             <ul>
                 <li><a href="index.html">Efnisyfirlit</a></li>
-                <li><a href="index.html" class="active">Flexbox-uppsetning</a></li>
-
-                <li><a href="myndavinnsla.html">Myndnotkun</a></li>
+                <li><a href="index.html"> Flexbox uppsetning</a></li>
+                <li><a href="myndavinnsla.html" class="active">Myndnotkun</a></li>
                 <li><a href="#">HTML Grindakerfi</a></li>
             </ul>
         </nav>
         <!-- nav end -->
         <header>
-            <h2>Flexbox-uppsetning</h2>
+            <h2>Sveigjanleg hönnun - Myndnotkun</h2>
+            <picture>
+                <source media="(max-width: 600px)" srcset="images/rose-480.jpg">
+                <source media="(max-width: 1280px)" srcset="images/rose-960.jpg">
+                <img src="images/rose-1600.jpg" alt="IfItDoesntMatchAnyMedia">
+
+            </picture>
         </header>
         <!-- header end -->
         <main>
@@ -41,7 +47,15 @@
 			quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
 			consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
 			cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
-			proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</b></p>
+			proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</b>
+                </p>
+                <figure>
+                    <img src="images/mynd-1.jpg" alt="myndatexti">
+                    <img src="images/mynd-2.jpg">
+                    <img src="images/mynd-3.jpg">
+                    <img src="images/mynd-4.jpg">
+
+                </figure>
                 <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis
                     aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
             </section>
