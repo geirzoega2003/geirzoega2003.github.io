@@ -1,0 +1,27 @@
+.kassi1{
+    border: 2px solid black;
+    margin: 20px;
+    padding: 2px;
+    display: grid;
+}
+.kassi2{
+    border: 2px solid black;
+    margin: 20px;
+    padding: 3px;
+    display: grid;
+    
+}
+img{
+    max-width: 30%;
+    height: auto;
+}
+.grid{
+    display: grid;
+    grid-template-columns: 1fr 1fr ;
+
+}
+
+.first-letter{
+    font-size: 35px;
+    line-height: 70px;
+}
