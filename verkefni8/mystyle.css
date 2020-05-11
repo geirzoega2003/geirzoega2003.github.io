@@ -1,0 +1,229 @@
+                                                *,
+                                            *:before,
+                                            *:after {
+                                                box-sizing: border-box;
+                                            }
+                                            
+                                            body {
+                                                background-color: #f2f2f2;
+                                                margin: 0;
+                                                font-family: 'Roboto', sans-serif;
+                                            }
+                                            
+                                             :root {
+                                                --gray: #457985;
+                                                --green: #458564;
+                                                --orange: #d6770b;
+                                            }
+                                            
+                                            .main-container {
+                                                width: 80%;
+                                                margin: 0 auto;
+                                                height: auto;
+                                                background-color: white;
+                                                margin-top: 0px;
+                                            }
+                                            
+                                            nav {
+                                                width: 100%;
+                                                background-color: var(--gray);
+                                                text-align: center;
+                                                padding: 10px 0px;
+                                            }
+                                            
+                                            nav ul {
+                                                margin: 0px;
+                                                padding: 0px;
+                                            }
+                                            
+                                            nav ul li {
+                                                display: inline;
+                                                list-style: none;
+                                                padding: 8px 0px;
+                                            }
+                                            
+                                            nav ul li a {
+                                                display: inline-block;
+                                                padding: 10px 30px;
+                                                background: var(--orange);
+                                                color: white;
+                                                font-size: 18px;
+                                                text-decoration: none;
+                                                text-transform: capitalize;
+                                            }
+                                            
+                                            .active {
+                                                background: white;
+                                                color: orange;
+                                            }
+                                            
+                                            header {
+                                                width: 100;
+                                                height: 80%;
+                                                background-color: var(--green);
+                                                margin: 0px;
+                                                text-align: center;
+                                            }
+                                            
+                                            header h2 {
+                                                margin: 0px;
+                                                margin-top: 1px;
+                                                color: white;
+                                                text-transform: uppercase;
+                                                line-height: 80px;
+                                                padding-left: 10px;
+                                            }
+                                            
+                                            main {
+                                                display: grid;
+                                                grid-template-columns: 1fr 2fr 1fr;
+                                                grid-template-rows: auto;
+                                            }
+                                            
+                                            .arrow {
+                                                width: 60px;
+                                                height: 60px;
+                                                background-color: var(--orange);
+                                                text-align: center;
+                                                position: fixed;
+                                                bottom: 0px;
+                                                right: 0px;
+                                                border-radius: 100%;
+                                                margin-right: 11%;
+                                            }
+                                            
+                                            .arrow a {
+                                                font-size: 40px;
+                                                text-decoration: none;
+                                                line-height: 60px;
+                                                color: black;
+                                                box-sizing: border-box;
+                                            }
+                                            
+                                            aside {
+                                                background-color: var(--gray);
+                                                margin-top: 1px;
+                                                padding: 10px;
+                                                color: white;
+                                            }
+                                            
+                                            section {
+                                                height: auto;
+                                                text-align: center;
+                                                padding: 20px;
+                                            }
+                                            
+                                            section h1 {
+                                                color: var(--orange);
+                                            }
+                                            
+                                            section a {
+                                                font-weight: bold;
+                                            }
+                                            
+                                            footer {
+                                                display: grid;
+                                                grid-template-columns: 1fr;
+                                                grid-template-rows: auto;
+                                                background: var(--green);
+                                                margin-top: 1px;
+                                                padding: 20px;
+                                                color: white;
+                                                text-align: center;
+                                            }
+                                            
+                                            footer h3 {
+                                                text-align: center;
+                                            }
+                                            
+                                            figure {
+                                                display: grid;
+                                                grid-template-columns: 1fr 1fr 1fr 1fr;
+                                                grid-template-rows: auto;
+                                                grid-gap: 10px;
+                                            }
+                                            
+                                            figure img {
+                                                width: 100%;
+                                                height: 100px;
+                                            }
+                                            
+                                            picture img {
+                                                width: 100%;
+                                                /*media queries for responsive */
+                                                @media only screen and (max-width: 992px) {
+                                                    .main-container {
+                                                        width: 90%;
+                                                    }
+                                                    figure {
+                                                        display: grid;
+                                                        grid-template-columns: 1fr 1fr;
+                                                        grid-template-rows: auto;
+                                                        grid-gap: 10px;
+                                                    }
+                                                    figure img {
+                                                        width: 100%;
+                                                        height: 100px;
+                                                    }
+                                                }
+                                                @media only screen and (max-width:768px) {
+                                                    .main-container {
+                                                        width: 95%;
+                                                    }
+                                                    nav ul li {
+                                                        display: block;
+                                                        width: 100%;
+                                                        margin: 0px;
+                                                        padding: 1px;
+                                                    }
+                                                    nav ul li a {
+                                                        width: 80%;
+                                                        margin: 0px;
+                                                    }
+                                                    main {
+                                                        display: grid;
+                                                        grid-template-columns: 1fr;
+                                                        grid-template-rows: auto;
+                                                    }
+                                                    figure {
+                                                        display: grid;
+                                                        grid-template-columns: 1fr 1fr;
+                                                        grid-template-rows: auto;
+                                                        grid-gap: 10px;
+                                                    }
+                                                    figure img {
+                                                        width: 100%;
+                                                        height: 200px;
+                                                    }
+                                                    .arrow {
+                                                        margin-right: 3%;
+                                                    }
+                                                }
+                                                @media only screen and (max-width:554px) {
+                                                    figure {
+                                                        display: grid;
+                                                        grid-template-columns: 1fr;
+                                                        grid-template-rows: auto;
+                                                        grid-gap: 10px;
+                                                    }
+                                                    figure img {
+                                                        width: 100%;
+                                                        height: 300px;
+                                                    }
+                                                    .arrow {
+                                                        margin-right: 3%;
+                                                    }
+                                                }
+                                                .iframe-container {
+                                                    position: relative;
+                                                    width: 100%;
+                                                    padding-bottom: 56.25%;
+                                                    height: 0;
+                                                }
+                                                .iframe-container iframe {
+                                                    position: absolute;
+                                                    top: 0;
+                                                    left: 0;
+                                                    width: 100%;
+                                                    height: 100%;
+                                                }
